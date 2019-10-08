@@ -1,0 +1,40 @@
+@import 'global/variables';
+@import 'global/global';
+
+.loading {
+    height: 100vh;
+    overflow: hidden;
+}
+section,
+aside,
+footer {
+    display: none;
+}
+
+@import 'components/navigation';
+@import 'global/header';
+
+// Aside
+@import 'components/videos-list';
+@import 'components/news-list';
+@import 'components/match-tables';
+@import 'components/main-aside';
+
+@import 'team/team-member-main';
+
+@import 'global/footer';
+// Mobile Styles
+@import 'global/header-mob';
+
+// Aside Mobile
+@import 'components/videos-list-mob';
+@import 'components/news-list-mob';
+@import 'components/match-tables-mob';
+@import 'components/main-aside-mob';
+
+@import 'team/team-member-main-mob';
+
+@import 'global/footer-mob';
+
+// Ads
+@import 'components/blurb';

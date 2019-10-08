@@ -1,0 +1,46 @@
+/*-----------------------------------------------------------------*/
+/*-- Table Page Mobile --*/
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+	.main {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.tableBig {
+		td,
+		th {
+			line-height: 15vh;
+		}
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.container {
+		padding-top: calc(44px + (2vh * 2) + 5vh);
+	}
+}
+@media only screen and (max-width: 770px) {
+	.tableBig {
+		td,
+		th {
+			width: 9%;
+			&.tableBig__place {
+				width: 12%;
+			}
+			&.tableBig__club {
+				width: 34%;
+			}
+			&.tableBig__scored,
+			&.tableBig__missed {
+				display: none;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 420px) {
+	.tableBig {
+		td,
+		th {
+			width: 6%;
+		}
+	}
+}
+/*-- /Table Page Mobile --*/

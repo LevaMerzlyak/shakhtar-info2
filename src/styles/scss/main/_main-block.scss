@@ -1,0 +1,286 @@
+/*-----------------------------------------------------------------*/
+/*-- Main Block Style --*/
+.main__wrap {
+	overflow: hidden;
+	height: 0;/* unloaded state */
+	transition: height 0.5s $ttf;
+}
+.main {
+	display: flex;
+	height: 100vh;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 23vh;
+	box-sizing: border-box;
+	position: relative;
+}
+/*-----------------------------------------------------------------*/
+/*-- Highlight Block --*/
+.main__highlight {
+	width: 48%;
+	z-index: 1;
+}
+.highligh__info {
+	width: 40%;
+	margin-top: 0.5em;
+	position: relative;
+	overflow: hidden;
+	&_video {
+		&:before {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: $clr-newsHead;
+			opacity: 0;/* unloaded state */
+			transform: translateX(-100%);/* unloaded state */
+			z-index: 1;	
+		}
+	}
+	&_match {
+		width: 50%;
+		.matches__head {
+			line-height: 8vh;
+			position: relative;
+			z-index: 10;
+			color: $clr-newsHead;/* unloaded state */
+			transform: translateY(-100%);/* unloaded state */
+			transition: transform 0.5s $ttf 0.5s, color 0.5s $ttf 1s;
+		}
+		.match__wrap {
+			height: 22vh;
+			transform: translateY(-30vh);/* unloaded state */
+			transition: transform 0.5s $ttf 1s;
+			.match__date,
+			.team__logo,
+			.match__result {
+				opacity: 0;/* unloaded state */
+				transition: opacity 0.3s $ttf 1.5s;
+			}
+
+		}
+		.match__broadcast {
+			padding-left: 10%;
+			padding-right: 10%;
+		}
+	}
+}
+.highlightVideo {
+	display: block;
+	width: 100%;
+	padding-bottom: 66%;
+	position: relative;
+	opacity: 0;/* unloaded state */
+	transition: opacity 0.01s $ttf 0.95s;
+	&:before {
+		content: "";
+		display: block;
+		width: 3%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $clr-orange;
+		z-index: 1;
+	}
+	&:after {
+		background-size: 25%;
+	}
+}
+.highlightVideo__head {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	@extend %proxi-bld;
+	line-height: 2em;
+	text-align: center;
+	background-color: $clr-matchNext;
+}
+.mainHead {
+	display: block;
+	margin-top: 20vh;
+	text-decoration: none;
+	transform: scale(0.8);/* unloaded state */
+	opacity: 0;/* unloaded state */
+	transition: transform 0.1s $ttf 0.4s, opacity 0.5s $ttf 0.4s;
+}
+.main__head {
+	color: #fff;
+	font-size: 3.5em;
+	@extend %proxi-eXbld;
+	line-height: 1em;
+}
+/*-- /Highlight Block --*/
+/*-----------------------------------------------------------------*/
+/*-- News Menu --*/
+.main__news {
+	width: 52%;
+	z-index: 1;
+}
+.newsMenu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.newsMenu__link {
+	display: inline-block;
+	padding-top: 0.5em;
+	padding-right: 1.25em;
+	padding-bottom: 0.5em;
+	padding-left: 1.25em;
+	color: #fff;
+	font-size: 1em;
+	@extend %proxi-eXbld;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+	opacity: 0;/* unloaded state */
+	transform: scale(0.8);/* unloaded state */
+	transition: transform 0.2s $ttf 0.4s, opacity 0.5s $ttf 0.4s;;
+	&:before {
+		content: "";
+		display: block;
+		width: 0%;/* unloaded state */
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $clr-orange;
+		z-index: -1;
+		transition: width 0.2s $ttf;
+	}
+	&_top {
+		&:before{
+			transition: width 0.2s $ttf 0.7s;
+		}
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+		}
+	}
+}
+.newsMenu__line {
+	display: inline-block;
+	width: 0%;/* unloaded state */
+	height: 4px;
+	background-color: $clr-orange;
+	transition: width 0.2s $ttf 0.2s;
+}
+.news_main {
+	.news__dateTime {
+		width: 0%;/* unloaded state */
+		transition: width 0.5s $ttf 0.2s;
+		time {
+			opacity: 0;/* unloaded state */
+			transition: opacity 0.5s $ttf 1.7s;
+		}
+	}
+	.news__views {
+		opacity: 0;/* unloaded state */
+		transition: opacity 0.5s $ttf 1.7s;
+	}
+	.newsImg {
+		width: 0%;/* unloaded state */
+		transition: width 0.5s $ttf 0.7s;
+	}
+	.news__img {
+		opacity: 0;/* unloaded state */
+		transition: opacity 0.5s $ttf 1.7s;
+	}
+	.news__head {
+		width: 0%;/* unloaded state */
+		transition: width 0.5s $ttf 1.2s;
+	}
+	.newsHead {
+		opacity: 0;/* unloaded state */
+		transition: opacity 0.5s $ttf 1.7s, color 0.5s $ttf;
+	}
+}
+/*-- /News Menu --*/
+/*-----------------------------------------------------------------*/
+/*-- Loaded State --*/
+.loaded {
+	.main__wrap {
+		height: 100vh;
+	}
+	.highligh__info {
+		&_video {
+			&:before {
+				animation: shader 1s $ttf 0.4s;
+			}
+		}
+		&_match {
+			.matches__head {
+				transform: translateY(0%);
+				color: #fff;
+			}
+			.match__wrap {
+				transform: translateY(0%);
+				.match__date,
+				.team__logo,
+				.match__result {
+					opacity: 1;
+				}
+			}
+		}		
+	}
+	.highlightVideo {
+		opacity: 1;
+	}
+	.mainHead {
+		transform: scale(1);
+		opacity: 1;
+	}
+	.newsMenu__link {
+		transform: scale(1);
+		opacity: 1;
+		&_top {
+			&:before {
+				width: 100%;
+			}
+		}
+	}
+	.newsMenu__line {
+		width: 50%;
+	}
+	.news_main {
+		.news__dateTime,
+		.newsImg {
+			width: 15%;
+		}
+		.news__head {
+			width: 70%;
+		}
+		.newsHead,
+		.news__img,
+		.news__views,
+		.news__dateTime time {
+			opacity: 1;
+		}
+	}
+}
+/*-- /Loaded State --*/
+@keyframes shader {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    40% {
+        transform: translateX(0%);
+        opacity: 0.75;
+    }
+    60% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+/*-- /Main Block Style --*/

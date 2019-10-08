@@ -1,0 +1,135 @@
+/*-----------------------------------------------------------------*/
+/*-- News Page Block Mobile --*/
+@media only screen and (max-width: 1200px) {
+	.news {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.sectionHead__wrap_news {
+		margin-bottom: 5vh;
+	}
+	.news__link {
+		height: 15vh;
+		margin-bottom: 1em;
+		position: relative;
+		&:before {
+			content: "";
+			display: block;
+			width: 0.9%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: $clr-orange;
+			z-index: 1;
+		}
+	}
+	.news__dateTime {
+		display: flex;
+		align-items: center;
+		width: 70%;
+		height: auto;
+		padding-left: 1.3em;
+		box-sizing: border-box;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background-color: transparent;
+		z-index: 2;
+		time {
+			display: flex;
+			padding-left: 0.5em;
+			position: relative;
+			top: 0;
+			left: 0;
+			transform: translate(0%, 0%);
+		    &:before {
+		    	content: "";
+		    	display: block;
+		    	width: 3px;
+		    	height: 0.6em;
+		    	position: absolute;
+		    	left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				background-color: $clr-orange;
+		    }
+		}
+		&:before {
+			display: none;
+		}
+	}
+	.news__date {
+		color: $clr-sectionHead;
+		font-family: 'ProximaNova', sans-serif;
+	    font-weight: 400;
+	    margin-right: 1em;
+	}
+	.news__time {
+		color: $clr-sectionHead;
+		font-size: 0.9em;
+		line-height: 1.5em;
+	}
+	.news__views {
+		display: flex;
+		align-items: center;
+		margin-left: 1em;
+		.icon {
+			height: 1em;
+			margin-right: 0.5em;
+		}
+	}
+	.newsImg {
+		width: 30%;
+		height: 100%;
+		padding-bottom: 0;
+	}
+	.newsTxt__wrap {
+		width: 70%;
+	}
+	.news__header {
+		height: 100%;
+		&:before {
+			display: none;
+		}
+	}
+	.news__head {
+		width: 100%;
+	}
+	.newsHead {
+		padding-bottom: 2em;
+	}
+	.news__txt {
+		display: none;
+	}
+}
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+	.news__link {
+		height: 20vh;
+	}
+	.newsImg {
+		width: 20%;
+	}
+	.newsTxt__wrap {
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.container {
+		padding-top: calc(5vh + (44px + (2vh * 2)) + 2vw);
+	}
+}
+@media only screen and (max-width: 1000px) and (orientation: landscape) {
+	.news__link {
+		height: 30vh;
+	}
+}
+@media only screen and (max-width: 330px) and (orientation: portrait) {
+	.newsHead {
+		font-size: 1em;
+	}
+	.news__dateTime {
+		padding-left: 1em;
+	}
+}
+/*-- /News Page Block Mobile --*/

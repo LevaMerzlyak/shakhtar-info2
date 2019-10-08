@@ -1,0 +1,45 @@
+@import 'global/variables';
+@import 'global/global';
+
+.loading {
+    height: 100vh;
+    overflow: hidden;
+}
+section,
+footer {
+    display: none;
+}
+
+@import 'components/navigation';
+@import 'global/header';
+
+// Aside
+@import 'components/main-aside';
+
+@import 'components/match-tables';
+@import 'components/news-list';
+@import 'main/main-block';
+@import 'components/videos-list';
+@import 'main/video-block';
+@import 'main/matches-block';
+@import 'main/news-block';
+
+@import 'global/footer';
+// Mobile Styles
+@import 'global/header-mob';
+
+// Aside Mobile
+@import 'components/main-aside-mob';
+
+@import 'components/match-tables-mob';
+@import 'components/news-list-mob';
+@import 'main/main-block-mob';
+@import 'components/videos-list-mob';
+@import 'main/video-block-mob';
+@import 'main/matches-block-mob';
+@import 'main/news-block-mob';
+
+@import 'global/footer-mob';
+
+// Ads
+@import 'components/blurb';

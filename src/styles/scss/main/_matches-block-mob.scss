@@ -1,0 +1,23 @@
+/*-----------------------------------------------------------------*/
+/*-- Matches Block Mobile --*/
+@media only screen and (max-width: 1200px) {
+	.matches {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.matches__wrap {
+		flex-wrap: wrap;
+	}
+	.matches__col {
+		width: 100%;
+		&:not(:last-child) {
+			margin-bottom: 10vh;
+		}
+	}
+	.matchesTable {
+		&:before {
+			display: none;
+		}
+	}
+}
+/*-- /Matches Block Mobile --*/

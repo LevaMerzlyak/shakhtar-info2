@@ -1,0 +1,44 @@
+/*-----------------------------------------------------------------*/
+/*-- Pages Navigation --*/
+.pagesNav {
+	display: flex;
+	justify-content: center;
+}
+.pagesNav__item {
+	&_dots {
+		&.pagesNav__item_start,
+		&.pagesNav__item_end {
+			display: none;
+		}
+	}
+	&:not(:last-child) {
+		margin-right: 1em;
+	}
+}
+.pagesNav__link {
+	display: inline-block;
+	height: 44px;
+	color: $clr-orange;
+	font-size: 1.5em;
+	@extend %proxi-reg;
+	line-height: 44px;
+	text-align: center;
+	text-decoration: none;
+	&_btn {
+		width: 44px;
+		background-color: $clr-orange;
+		position: relative;
+		.icon {
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+	}
+	&_active {
+		text-decoration: underline;
+	}
+}
+/*-- /Pages Navigation --*/

@@ -1,0 +1,120 @@
+/*-----------------------------------------------------------------*/
+/*-- Videos List --*/
+.videos__wrap {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+.video__link {
+	width: 30%;
+	padding-bottom: calc(30% * 0.6);
+	margin-bottom: 11vh;
+	position: relative;
+	&:hover {
+		.video__head {
+			&:before {
+				width: 100%;
+			}
+		}
+		.videoHead {
+			color: $clr-newsHead;
+		}
+	}
+}
+.videoImg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	&:after {
+		background-size: 15%;
+	}
+}
+.video__txt {
+	display: flex;
+	align-items: center;
+	width: 92%;
+	height: 11vh;
+	position: absolute;
+	bottom: -5.5vh;
+	left: 50%;
+	background-color: $clr-header;
+	transform: translateX(-50%);
+	z-index: 3;
+	&:before {
+		content: "";
+		display: block;
+		width: 2%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $clr-orange;
+		z-index: 1;
+	}
+}
+.video__dateTime {
+	width: 25%;
+	height: 100%;
+	background-color: $clr-header;
+	position: relative;
+	time {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+}
+.video__date {
+	color: #fff;
+	font-size: 0.9em;
+	@extend %gotham-med;
+	line-height: 1.5em;
+}
+.video__time {
+	color: #fff;
+	font-size: 1.25em;
+	@extend %proxi-reg;
+	line-height: 1.2em;
+}
+.video__views {
+	display: none;
+}
+.videoViews__num {
+	color: $clr-sectionHead;
+	font-size: 0.9em;
+	@extend %proxi-reg;
+	line-height: 1.5em;
+}
+.video__head {
+	width: 75%;
+	height: 100%;
+	background-color: $clr-newsHead;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		width: 0%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #fff;
+		transition: width 0.5s $ttf;
+	}
+}
+.videoHead {
+	position: absolute;
+	top: 50%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 1.1em;
+	@extend %gotham-med;
+	line-height: 1.5em;
+	transition: color 0.5s $ttf;
+}
+/*-- /Videos List --*/

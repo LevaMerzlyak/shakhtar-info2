@@ -1,0 +1,363 @@
+/*-----------------------------------------------------------------*/
+/*-- Article Page Block --*/
+.container {
+	padding-top: 20vh;
+}
+.main {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-bottom: 10vh;
+	box-sizing: border-box;
+}
+.article__wrap {
+	width: 65%;
+}
+.articleImg {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.article__header {
+	display: flex;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		width: 1%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $clr-orange;
+	}
+}
+.article__dateTime {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 12%;
+	background-color: $clr-header;
+	time {
+		width: 100%;
+		text-align: center;
+	}
+}
+.article__date {
+	color: #fff;
+	font-size: 0.9em;
+	@extend %proxi-bld;
+	line-height: 1.5em;
+}
+.article__time {
+	color: #fff;
+	font-size: 1.25em;
+	@extend %proxi-reg;
+	line-height: 1.2em;
+}
+.article__views {
+	margin-top: 1em;
+	width: 100%;
+	text-align: center;
+}
+.articleViews__num {
+	color: $clr-sectionHead;
+	font-size: 0.9em;
+	@extend %proxi-reg;
+	line-height: 1.5em;
+}
+.article__head {
+	width: 88%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-right: 1em;
+	padding-left: 1em;
+	box-sizing: border-box;
+	background-color: $clr-newsHead;
+}
+.articleHead {
+	color: #fff;
+	font-size: 3em;
+	@extend %proxi-bld;
+	line-height: 1em;
+}
+.article__txt {
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-bottom: 2em;
+	padding-right: 2em;
+	background-color: #fff;
+}
+.articleTxt {
+	color: $clr-bg;
+	font-size: 1.1em;
+	@extend %proxi-reg;
+	line-height: 1.6em;
+	&:not(:first-child) {
+		margin-top: 2em;
+	}
+}
+.article__more {
+	margin-top: 2em;
+	padding-left: 2em;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		height: 100%;
+		width: 1%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: $clr-orange;
+	}
+}
+.articleMore__head {
+	margin-bottom: 0.5em;
+	color: $clr-blk;
+	font-size: 1.2em;
+	@extend %proxi-bld;
+	text-transform: uppercase;
+}
+.articleMore__link {
+	color: $clr-orange;
+	font-size: 1.2em;
+	@extend %proxi-bld;
+	text-decoration: none;
+}
+.article__media {
+	margin-top: 2em;
+}
+.articleMedia__img {
+	width: 100%;
+	height: auto;
+}
+/*-----------------------------------------------------------------*/
+/*-- Article Tags --*/
+.article__tags {
+	display: flex;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		width: 1%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $clr-orange;
+	}
+}
+.articleTags__head {
+	display: flex;
+	align-items: center;
+	width: 13%;
+	background-color: $clr-header;
+}
+.articleTagsHead {
+	width: 100%;
+	color: $clr-sectionHead;
+	font-size: 1em;
+	@extend %proxi-reg;
+	text-align: center;
+}
+.articleTags__list {
+	width: 87%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	box-sizing: border-box;
+	background-color: $clr-match;
+}
+.articleTags__link {
+	display: inline-block;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	color: $clr-sectionHead;
+	font-size: 1em;
+	@extend %proxi-reg;
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		color: $clr-orange;
+	}
+}
+/*-- /Article Tags --*/
+/*-----------------------------------------------------------------*/
+/*-- Article Share --*/
+.articleShare {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.articleShare__item {
+	&:not(:last-child) {
+		margin-right: 35px;
+	}
+}
+.articleShare__link {
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	.icon {
+		width: 44px;
+		height: 44px;
+	}
+}
+.articleShare__num {
+	color: $clr-sectionHead;
+	font-size: 0.8em;
+	@extend %gotham-med;
+	text-align: center;
+	line-height: 1.25em;
+}
+/*-- /Article Share --*/
+/*-----------------------------------------------------------------*/
+/*-- Article Comments --*/
+.comment__wrap {
+	background-color: $clr-match;
+	padding: 2em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	&_add {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+}
+.addComment__head {
+	margin-bottom: 2em;
+	color: $clr-sectionHead;
+	font-size: 1em;
+	@extend %proxi-bld;
+	text-transform: uppercase;
+}
+.addComment__form {
+	textarea {
+		width: 100%;
+		height: 10em;
+		padding: 1em;
+		box-sizing: border-box;
+		background-color: $clr-match;
+		border: 1px solid $clr-sectionHead;
+		outline: none;
+		resize: none;
+		overflow: auto;
+		color: #fff;
+		font-size: 1em;
+		@extend %proxi-reg;
+	}
+	.more__btn {
+		margin-top: 2em;
+		z-index: 1;
+	}
+}
+.comment {
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+}
+.comment__userImg {
+	width: 12%;
+	margin-right: 2%;
+}
+.commentUserImg {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+	img {
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.icon {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-size: cover;
+	}
+}
+.comment__data {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 86%;
+	position: absolute;
+	left: 14%;
+	top: 0;
+}
+.comment__date {
+	color: $clr-sectionHead;
+	font-size: 0.9em;
+	@extend %proxi-bld;
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		height: 1em;
+		width: 3px;
+		position: absolute;
+		left: -1em;
+		top: 0;
+		background-color: $clr-orange;
+	}
+}
+.comment__userName {
+	margin-bottom: 0.5em;
+	color: #fff;
+	font-size: 1.2em;
+	@extend %proxi-bld;
+}
+.commentTxt {
+	width: 86%;
+	margin-top: 2em;
+}
+.comment__txt {
+	margin-bottom: 0.5em;
+	width: 80%;
+	color: $clr-comment;
+	font-size: 1em;
+	@extend %proxi-reg;
+	line-height: 1.5em;
+}
+.comment__answerBtn {
+	color: $clr-orange;
+	font-size: 1em;
+	@extend %proxi-bld;
+}
+.comment_answer {
+	margin-top: 2em;
+	.commentTxt {
+		margin-top: 4em;
+	}
+	.comment__userImg {
+		width: 8%;
+	}
+}
+.comment__answerTo {
+	width: 100%;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	color: $clr-sectionHead;
+	font-size: 0.9em;
+	@extend %gotham-med;
+}
+.comment__answerToUser {
+	@extend %proxi-bld;
+	color: #fff;
+	text-decoration: none;
+}
+/*-- /Article Comments --*/
+/*-- /Article Page Block --*/

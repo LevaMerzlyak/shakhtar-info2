@@ -1,0 +1,38 @@
+/*-----------------------------------------------------------------*/
+/*-- Main Aside --*/
+.main__aside {
+	width: 30%;
+}
+.aside__wrap {
+	&:not(:last-child) {
+		margin-bottom: 10vh;
+	}
+	&_fb {
+		display: flex;
+		justify-content: flex-end;
+	}
+	/*-- Aside See Also --*/
+	&_seeAlso {
+		.sectionHead__wrap {
+			margin-bottom: 5vh;
+		}
+		.video__link {
+			width: 100%;
+			padding-bottom: calc(100% * 0.6);
+		}
+		.news__dateTime {
+			display: none;
+		}
+		.newsImg {
+			width: 20%;
+		}
+		.news__head {
+			width: 80%;
+		}
+		.newsHead {
+			font-size: 1.2em;
+		}
+	}
+	/*-- /Aside See Also --*/
+}
+/*-- /Main Aside --*/

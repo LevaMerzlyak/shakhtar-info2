@@ -1,0 +1,45 @@
+/*-----------------------------------------------------------------*/
+/*-- Navigation Style --*/
+.nav {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.nav__item {
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		width: 0%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $clr-orange;
+		z-index: -1;
+		transition: width 0.2s $ttf;
+	}
+	&_active {
+		&:before{
+			transition: width 0.3s $ttf 1s;
+		}
+	}
+	&:hover {
+		&:before {
+			width: 100%;
+		}
+	}
+}
+.nav__link {
+	display: inline-block;
+	padding-top: 0.5em;
+	padding-right: 1.25em;
+	padding-bottom: 0.5em;
+	padding-left: 1.25em;
+	color: #fff;
+	font-size: 1em;
+	@extend %proxi-bld;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+/*-- /Navigation Style --*/

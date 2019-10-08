@@ -1,0 +1,33 @@
+/*-----------------------------------------------------------------*/
+/*-- Matches Block --*/
+.matches {
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	box-sizing: border-box;
+}
+.matches__wrap {
+	display: flex;
+	margin-top: 8vh;
+}
+.matches__col {
+	width: calc(100% / 3);
+	.moreBtn__wrap {
+		margin-top: 5vh;
+	}
+}
+.matchesTable {
+	position: relative;
+	&:before {
+		content: "";
+		display: block;
+		height: 100%;
+		width: 1px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: $clr-orange;
+	}
+}
+/*-- /Matches Block --*/

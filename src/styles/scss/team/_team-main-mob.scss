@@ -1,0 +1,14 @@
+/*-----------------------------------------------------------------*/
+/*-- Main Block Mobile Style --*/
+@media only screen and (max-width: 1200px) {
+	.main {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.main {
+		padding-top: calc(44px + (2vh * 2) + 5vh);
+	}
+}
+/*-- /Main Block Mobile Style --*/

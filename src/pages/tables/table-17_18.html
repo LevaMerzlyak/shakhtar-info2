@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+
+	<title>ФК ШАХТАР INFO</title>
+
+	<!-- Preloader CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/preloader.css">
+	<!-- Reset CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<!-- Fonts -->
+	<link rel="stylesheet" type="text/css" href="../css/fonts.css">
+	<!-- Icons CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/icons.css">
+	<!--Main CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/table.css">
+</head>
+<body class="loading">
+	<div class="loader">
+		<div class="ball__wrap">
+		  	<div class="ball">
+		    	<svg viewBox="0 0 18.9 19">
+		    		<path fill="#eb6a0a" d="M11.2 12.9H7.8L6.4 15l1.1 2.7c.6.2 1.3.2 2 .2s1.4-.1 2.1-.3l1-2.6-1.4-2.1zM13 9.3l-1 3 1.5 2.3 2.7.2c1-1.2 1.6-2.8 1.8-4.4l-2.2-1.7-2.8.6zm-5.9 3L6 9.1l-2.8-.7L1 10.1c.1 1.7.8 3.3 1.8 4.6l2.8-.2 1.5-2.2zm-.6-4.1L9 6.4V3.2L6.7 1.5c-1.8.6-3.3 1.8-4.3 3.3l1 2.6 3.1.8zM10 6.4l2.7 1.9 2.9-.7 1-2.7c-1-1.5-2.5-2.7-4.3-3.4L10 3.2v3.2z"></path>
+		    		<path fill="#131313" d="M17.3 4c-1-1.5-2.5-2.6-4.2-3.3C12 .3 10.8 0 9.5 0S7 .3 5.9.7c-1.6.7-3 1.8-4.1 3.2C.7 5.4 0 7.4 0 9.5c0 .5 0 .9.1 1.4.2 1.5.8 2.9 1.6 4.1 1.4 2 3.5 3.4 6 3.9.6 0 1.2.1 1.8.1s1.2-.1 1.8-.2c2.5-.5 4.6-1.9 6-4 .8-1.1 1.3-2.4 1.5-3.8.1-.5.1-1 .1-1.5.1-2-.5-3.9-1.6-5.5zM10 3.2l2.3-1.7c1.8.6 3.3 1.8 4.3 3.4l-1 2.7-2.9.7L10 6.4V3.2zM6.7 1.5L9 3.2v3.2L6.5 8.2l-3.1-.8-1-2.6c1-1.5 2.5-2.7 4.3-3.3zM2.8 14.7c-1-1.3-1.7-2.9-1.8-4.6l2.2-1.7 2.8.7 1 3.2-1.5 2.3-2.7.1zm8.8 3c-.7.2-1.4.3-2.1.3-.7 0-1.3-.1-2-.2l-1.1-2.7L7.8 13h3.4l1.4 2.2-1 2.5zm4.6-3l-2.7-.2-1.5-2.2 1-3 2.8-.7 2.2 1.7c-.2 1.7-.8 3.2-1.8 4.4z"></path>
+		    	</svg>
+		  	</div>
+		</div>
+	</div>
+
+<div class="container">
+	
+	<header class="header" id="header">
+		<a href="#" class="menuBtn"><!-- class="menuBtn menuBtn_close" -->
+			<i class="menuBtn__line"></i>
+		</a>
+		<a href="../index.html" class="logo logo_header icon icon_logo">ШАХТАР.INFO</a>
+		<div class="header__nav">
+			<ul class="nav nav_header">
+				<li class="nav__item">
+					<a href="../index.html" class="nav__link">Главная</a>
+				</li>
+				<li class="nav__item">
+					<a href="../team.html" class="nav__link">Команда</a>
+				</li>
+				<li class="nav__item">
+					<a href="../news.html" class="nav__link">Новости</a>
+				</li>
+				<li class="nav__item nav__item_active">
+					<a href="../season.html" class="nav__link">Сезон</a>
+				</li>
+				<li class="nav__item">
+					<a href="../club.html" class="nav__link">Клуб</a>
+				</li>
+				<li class="nav__item">
+					<a href="../videos.html" class="nav__link">Видео</a>
+				</li>
+			</ul>
+		</div>
+		<div class="search">
+			<a href="#" class="search__link">
+				<i class="icon icon_search icon_search_header"></i>
+			</a>
+			<div class="search__block"> <!-- class="search__block search__block_open" -->
+				<form action="">
+					<input type="text" name="search" placeholder="Поиск..." class="search__input">
+					<button type="submit" class="search__submit"><i class="icon icon_search"></i></button>
+				</form>
+			</div>
+		</div>
+		<div class="login"><!-- class="login login_loged" -->	
+			<div class="login__block">
+				<a href="#" class="login__link login__link_log">ВХОД</a>
+				<a href="#" class="login__link login__link_reg">регистрация</a>
+				<i class="icon icon_user login__user"></i>
+			</div>
+			<div class="user__block">
+				<p class="user__name user__name_header">User Name</p>
+				<div class="user__photo user__photo_header user__photo_def"><!-- class="user__photo" -->
+					<i class="icon icon_user_def"></i>
+					<img src="../images/users/user.png" alt="User Name">
+				</div>
+			</div>
+		</div>
+		<div class="avatar__menu">
+			<div class="avatarMenu">
+				<div class="avatarMenu__user">
+					<p class="user__name">User Name</p>
+					<div class="user__photo user__photo_avatarMenu user__photo_def">
+						<i class="icon icon_user_def"></i>
+						<img src="../images/users/user.png" alt="User Name">
+					</div>
+				</div>
+				<div class="avatarMenu__form">
+					<p class="avatarMenu__txt">Загризите фотографию или выберете из предложенных</p>		
+					<form class="avatarMenuForm">
+						<label class="avatar__file">
+							<input type="file">
+							<p>Загрузить аватар</p>
+						</label>
+						<div class="avatarMenu__radios">
+							<label class="avatar__label">
+								<input type="radio" name="avatar" value="def">
+								<i class="icon icon_user_def"></i>
+							</label>
+							<label class="avatar__label">
+								<input type="radio" name="avatar" value="def2">
+								<i class="icon icon_user_def2"></i>
+							</label>
+							<label class="avatar__label">
+								<input type="radio" name="avatar" value="def3">
+								<i class="icon icon_user_def3"></i>
+							</label>
+						</div>
+						<div class="more__btn more__btn_avatarMenu">
+							<input type="submit" value="Подтвердить" id="avatarSubmit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="table">
+			<div class="sectionHead__drop">
+				<h2 class="section__head">Сезон</h2>
+				<div class="seasonMenu__wrap" id="drop1">
+					<a href="#" class="seasonMenu__btn">2017/18 <i class="icon icon_downOrange"></i></a>
+					<div class="seasonMenu__dropDown">
+						<ul class="seasonMenu">
+							<li class="seasonMenu__item">
+								<a href="../table.html" class="seasonMenu__link">2018/19</a>
+							</li>
+							<li class="seasonMenu__item seasonMenu__item_active">
+								<a href="#" class="seasonMenu__link">2017/18</a>
+							</li>
+							<li class="seasonMenu__item">
+								<a href="table-17_18.html" class="seasonMenu__link">2016/17</a>
+							</li>
+							<li class="seasonMenu__item">
+								<a href="table-17_18.html" class="seasonMenu__link">2015/16</a>
+							</li>
+							<li class="seasonMenu__item">
+								<a href="table-17_18.html" class="seasonMenu__link">2014/15</a>
+							</li>
+							<li class="seasonMenu__item">
+								<a href="table-17_18.html" class="seasonMenu__link">2013/14</a>
+							</li>
+							<li class="seasonMenu__item">
+								<a href="table-17_18.html" class="seasonMenu__link">2012/13</a>
+							</li>
+							<li class="seasonMenu__item">
+								<a href="table-17_18.html" class="seasonMenu__link">2011/12</a>
+							</li>
+							<li class="seasonMenu__item">
+								<a href="table-17_18.html" class="seasonMenu__link">2010/11</a>
+							</li>
+							<li class="seasonMenu__item">
+								<a href="table-17_18.html" class="seasonMenu__link">2009/10</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="table__wrap">
+				<table class="tableBig">
+					<thead>
+						<tr>
+							<th class="tableBig__place">Место</th>
+							<th class="tableBig__club">Команда</th>
+							<th class="tableBig__matches">И</th>
+							<th class="tableBig__wins">В</th>
+							<th class="tableBig__draws">Н</th>
+							<th class="tableBig__defeats">П</th>
+							<th class="tableBig__scored">ЗМ</th>
+							<th class="tableBig__missed">ПМ</th>
+							<th class="tableBig__dif">РМ</th>
+							<th class="tableBig__points">О</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="tableBig__place">1</td>
+							<td class="tableBig__club">
+								<i class="club__logo">
+									<img class="clubLogo__img" src="../images/teams/Shakhtar.png">
+								</i>
+								<span class="club__name">Шахтер</span>
+							</td>
+							<td class="tableBig__matches">15</td>
+							<td class="tableBig__wins">13</td>
+							<td class="tableBig__draws">1</td>
+							<td class="tableBig__defeats">1</td>
+							<td class="tableBig__scored">38</td>
+							<td class="tableBig__missed">7</td>
+							<td class="tableBig__dif">31</td>
+							<td class="tableBig__points">40</td>
+						</tr>
+						<tr>
+							<td class="tableBig__place">2</td>
+							<td class="tableBig__club">
+								<i class="club__logo">
+									<img class="clubLogo__img" src="../images/teams/Dynamo.png">
+								</i>
+								<span class="club__name">Динамо</span>
+							</td>
+							<td class="tableBig__matches">15</td>
+							<td class="tableBig__wins">10</td>
+							<td class="tableBig__draws">2</td>
+							<td class="tableBig__defeats">3</td>
+							<td class="tableBig__scored">20</td>
+							<td class="tableBig__missed">7</td>
+							<td class="tableBig__dif">13</td>
+							<td class="tableBig__points">32</td>
+						</tr>
+						<tr>
+							<td class="tableBig__place">3</td>
+							<td class="tableBig__club">
+								<i class="club__logo">
+									<img class="clubLogo__img" src="../images/teams/Oleksandria.png">
+								</i>
+								<span class="club__name">Александрия</span>
+							</td>
+							<td class="tableBig__matches">15</td>
+							<td class="tableBig__wins">9</td>
+							<td class="tableBig__draws">3</td>
+							<td class="tableBig__defeats">3</td>
+							<td class="tableBig__scored">22</td>
+							<td class="tableBig__missed">12</td>
+							<td class="tableBig__dif">10</td>
+							<td class="tableBig__points">30</td>
+						</tr>
+						<tr>
+							<td class="tableBig__place">4</td>
+							<td class="tableBig__club">
+								<i class="club__logo">
+									<img class="clubLogo__img" src="../images/teams/Vorskla.png">
+								</i>
+								<span class="club__name">Ворскла</span>
+							</td>
+							<td class="tableBig__matches">15</td>
+							<td class="tableBig__wins">8</td>
+							<td class="tableBig__draws">0</td>
+							<td class="tableBig__defeats">7</td>
+							<td class="tableBig__scored">15</td>
+							<td class="tableBig__missed">17</td>
+							<td class="tableBig__dif">-2</td>
+							<td class="tableBig__points">24</td>
+						</tr>
+						<tr>
+							<td class="tableBig__place">5</td>
+							<td class="tableBig__club">
+								<i class="club__logo">
+									<img class="clubLogo__img" src="../images/teams/Zorya.png">
+								</i>
+								<span class="club__name">Заря</span>
+							</td>
+							<td class="tableBig__matches">15</td>
+							<td class="tableBig__wins">5</td>
+							<td class="tableBig__draws">6</td>
+							<td class="tableBig__defeats">4</td>
+							<td class="tableBig__scored">19</td>
+							<td class="tableBig__missed">13</td>
+							<td class="tableBig__dif">6</td>
+							<td class="tableBig__points">21</td>
+						</tr>
+						<tr>
+							<td class="tableBig__place">6</td>
+							<td class="tableBig__club">
+								<i class="club__logo">
+									<img class="clubLogo__img" src="../images/teams/Desna.png">
+								</i>
+								<span class="club__name">Десна</span>
+							</td>
+							<td class="tableBig__matches">15</td>
+							<td class="tableBig__wins">6</td>
+							<td class="tableBig__draws">2</td>
+							<td class="tableBig__defeats">7</td>
+							<td class="tableBig__scored">17</td>
+							<td class="tableBig__missed">18</td>
+							<td class="tableBig__dif">-1</td>
+							<td class="tableBig__points">20</td>
+						</tr>
+						<tr>
+							<td class="tableBig__place">7</td>
+							<td class="tableBig__club">
+								<i class="club__logo">
+									<img class="clubLogo__img" src="../images/teams/Mariupol.png">
+								</i>
+								<span class="club__name">Мариуполь</span>
+							</td>
+							<td class="tableBig__matches">15</td>
+							<td class="tableBig__wins">6</td>
+							<td class="tableBig__draws">2</td>
+							<td class="tableBig__defeats">7</td>
+							<td class="tableBig__scored">17</td>
+							<td class="tableBig__missed">25</td>
+							<td class="tableBig__dif">-8</td>
+							<td class="tableBig__points">20</td>
+						</tr>
+						<tr>
+							<td class="tableBig__place">8</td>
+							<td class="tableBig__club">
+								<i class="club__logo">
+									<img class="clubLogo__img" src="../images/teams/Lviv.png">
+								</i>
+								<span class="club__name">Львов</span>
+							</td>
+							<td class="tableBig__matches">15</td>
+							<td class="tableBig__wins">4</td>
+							<td class="tableBig__draws">6</td>
+							<td class="tableBig__defeats">5</td>
+							<td class="tableBig__scored">13</td>
+							<td class="tableBig__missed">16</td>
+							<td class="tableBig__dif">-3</td>
+							<td class="tableBig__points">18</td>
+						</tr>
+						<tr>
+							<td class="tableBig__place">9</td>
+							<td class="tableBig__club">
+								<i class="club__logo">
+									<img class="clubLogo__img" src="../images/teams/Karpaty.png">
+								</i>
+								<span class="club__name">Карпаты</span>
+							</td>
+							<td class="tableBig__matches">15</td>
+							<td class="tableBig__wins">4</td>
+							<td class="tableBig__draws">4</td>
+							<td class="tableBig__defeats">7</td>
+							<td class="tableBig__scored">18</td>
+							<td class="tableBig__missed">23</td>
+							<td class="tableBig__dif">-5</td>
+							<td class="tableBig__points">16</td>
+						</tr>
+						<tr>
+							<td class="tableBig__place">10</td>
+							<td class="tableBig__club">
+								<i class="club__logo">
+									<img class="clubLogo__img" src="../images/teams/Olimpik.png">
+								</i>
+								<span class="club__name">Олимпик</span>
+							</td>
+							<td class="tableBig__matches">15</td>
+							<td class="tableBig__wins">4</td>
+							<td class="tableBig__draws">4</td>
+							<td class="tableBig__defeats">7</td>
+							<td class="tableBig__scored">20</td>
+							<td class="tableBig__missed">23</td>
+							<td class="tableBig__dif">-3</td>
+							<td class="tableBig__points">16</td>
+						</tr>
+						<tr>
+							<td class="tableBig__place">11</td>
+							<td class="tableBig__club">
+								<i class="club__logo">
+									<img class="clubLogo__img" src="../images/teams/Chornomorec.png">
+								</i>
+								<span class="club__name">Черноморец</span>
+							</td>
+							<td class="tableBig__matches">15</td>
+							<td class="tableBig__wins">2</td>
+							<td class="tableBig__draws">3</td>
+							<td class="tableBig__defeats">10</td>
+							<td class="tableBig__scored">9</td>
+							<td class="tableBig__missed">26</td>
+							<td class="tableBig__dif">-17</td>
+							<td class="tableBig__points">9</td>
+						</tr>
+						<tr>
+							<td class="tableBig__place">12</td>
+							<td class="tableBig__club">
+								<i class="club__logo">
+									<img class="clubLogo__img" src="../images/teams/Arsenal.png">
+								</i>
+								<span class="club__name">Арсенал-Киев</span>
+							</td>
+							<td class="tableBig__matches">15</td>
+							<td class="tableBig__wins">2</td>
+							<td class="tableBig__draws">1</td>
+							<td class="tableBig__defeats">12</td>
+							<td class="tableBig__scored">7</td>
+							<td class="tableBig__missed">28</td>
+							<td class="tableBig__dif">-21</td>
+							<td class="tableBig__points">7</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__nav">
+			<a href="../index.html" class="logo logo_footer icon icon_logo">ШАХТАР.INFO</a>
+			<ul class="nav nav_footer">
+				<li class="nav__item nav__item_active">
+					<a href="../index.html" class="nav__link">Главная</a>
+				</li>
+				<li class="nav__item">
+					<a href="../team.html" class="nav__link">Команда</a>
+				</li>
+				<li class="nav__item">
+					<a href="../news.html" class="nav__link">Новости</a>
+				</li>
+				<li class="nav__item">
+					<a href="../season.html" class="nav__link">Сезон</a>
+				</li>
+				<li class="nav__item">
+					<a href="../club.html" class="nav__link">Клуб</a>
+				</li>
+				<li class="nav__item">
+					<a href="../videos.html" class="nav__link">Видео</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__wrap">
+			<div class="footerTxt">
+				<p class="footer__txt">Сайт болельщиков ФК Шахтера (<a href="http://shakhtar.info">shakhtar.info</a>) создан для поклонников этого клуба. У нас вы всегда найдете эксклюзивные интервью, свежие новости о Шахтере, отчеты матчей, видео материалы, онлайн трансляции поединков, а также обсуждения всех новостей о клубе.</p>
+				<p class="footer__txt">Все права на материалы, находящиеся на сайте <a href="http://shakhtar.info">shakhtar.info</a>, охраняются в соответствии с законодательством Украины. При любом использовании материалов сайта, гиперссылка на shakhtar.info обязательна. Пишите нам: <a href="mailto:adm@shakhtar.info">adm@shakhtar.info</a></p>
+			</div>
+			<ul class="socials">
+				<li class="socials__item">
+					<a href="#" class="socials__link"><i class="icon icon_facebook"></i>Facebook</a>
+				</li>
+				<!--li class="socials__item">
+					<a href="#" class="socials__link"><i class="icon icon_instagram"></i>Instagram</a>
+				</li-->
+				<!--li class="socials__item">
+					<a href="#" class="socials__link"><i class="icon icon_vkontakte"></i>Вконтакте</a>
+				</li-->
+				<!--li class="socials__item">
+					<a href="#" class="socials__link"><i class="icon icon_twitter"></i>Twitter</a>
+				</li-->
+				<!--li class="socials__item">
+					<a href="#" class="socials__link"><i class="icon icon_googlePlus"></i>Google +</a>
+				</li-->
+			</ul>
+			<aside class="footer__aside">
+				<div class="google">
+				    <script>
+					  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					  	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+					  	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+					  	ga('create', 'UA-73870609-1', 'auto');
+					  	ga('send', 'pageview');
+
+					</script>
+    			</div>
+				<div class="yandex">
+	    			<!-- Yandex.Metrika informer -->
+					<a href="https://metrika.yandex.ru/stat/?id=35413195&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/35413195/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try{Ya.Metrika.informer({i:this,id:35413195,lang:'ru'});return false}catch(e){}" /></a>
+					<!-- /Yandex.Metrika informer -->
+
+					<!-- Yandex.Metrika counter -->
+					<script type="text/javascript">
+					    (function (d, w, c) {
+					        (w[c] = w[c] || []).push(function() {
+					            try {
+					                w.yaCounter35413195 = new Ya.Metrika({
+					                    id:35413195,
+					                    clickmap:true,
+					                    trackLinks:true,
+					                    accurateTrackBounce:true
+					                });
+					            } catch(e) { }
+					        });
+
+					        var n = d.getElementsByTagName("script")[0],
+					            s = d.createElement("script"),
+					            f = function () { n.parentNode.insertBefore(s, n); };
+					        s.type = "text/javascript";
+					        s.async = true;
+					        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+					        if (w.opera == "[object Opera]") {
+					            d.addEventListener("DOMContentLoaded", f, false);
+					        } else { f(); }
+					    })(document, window, "yandex_metrika_callbacks");
+					</script>
+					<noscript><div><img src="https://mc.yandex.ru/watch/35413195" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+					<!-- /Yandex.Metrika counter -->
+			    </div>
+				<div class="liveinternet">
+				    <!--LiveInternet counter-->
+				    <script type="text/javascript"><!--
+					document.write("<a href='//www.liveinternet.ru/click' "+
+					"target=_blank><img src='//counter.yadro.ru/hit?t52.6;r"+
+					escape(document.referrer)+((typeof(screen)=="undefined")?"":
+					";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+					screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+					";"+Math.random()+
+					"' alt='' title='LiveInternet: показано число просмотров и"+
+					" посетителей за 24 часа' "+
+					"border='0' width='88' height='31'><\/a>")
+					//--></script><!--/LiveInternet-->
+			    </div>
+				<div class="1football">
+				    <a href="http://1football.info/statics/7-reyting_bukmekerov.html" target="_blank"><img src="http://ukrfootball.in.ua/sites/default/files/2016/1601240813134a73205b3a7b594d.gif" width="88" height="31" border="0" alt="Рейтинг букмекерских контор" title="Рейтинг букмекерских контор"></a>
+			    </div>
+			</aside>
+		</div>
+		<p class="footer__txt footer__txt_dev">Разработано в <a href="http://webcustom.org" target="_blank">webcustom.org</a></p>
+	</footer>
+
+	<div class="login__wrap" id="loginMenu">
+		<div class="loginMenu__wrap">
+			<div class="loginMenu__close">
+				<a href="#" class="close__btn"></a>
+			</div>
+			<div class="loginMenu__head">
+				<h4 class="loginMenuHead loginMenuHead_enter">Вход</h4>
+				<h4 class="loginMenuHead loginMenuHead_reg">Регистрация</h4>
+			</div>
+			<div class="login__menu">
+					<form class="loginMenu loginMenu_enter">
+						<input type="email" placeholder="E-mail">
+						<input type="password" placeholder="Пароль">
+						<div class="more__btn">
+							<input type="submit" value="вход">
+						</div>
+					</form>
+					<form class="loginMenu loginMenu_reg">			
+						<input type="email" placeholder="E-mail">
+						<input type="text" placeholder="Логин">
+						<input type="password" placeholder="Пароль">
+						<input type="password" placeholder="Подтвердите пароль">
+						<div class="more__btn">
+							<input type="submit" value="Регистрация">
+						</div>
+					</form>
+				<div class="loginMenu__links">
+					<a href="#" class="loginMenu__link loginMenu__link_enter" id="reg-menu">Регистрация</a>
+					<a href="#" class="loginMenu__link loginMenu__link_enter">Забыли пароль?</a>
+					<a href="#" class="loginMenu__link loginMenu__link_reg" id="login-menu">Вход</a>
+				</div>
+			</div>			
+			<p class="loginMenu__txt">Войти с помощью: <a href="#" class="icon icon_fbBox"></a></p>
+		</div>
+	</div>
+
+</div>
+
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script>
+		var perfData = window.performance.timing,
+		    EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+		    time = parseInt((EstimatedTime/1000)%60)*100;
+
+		setTimeout(function(){
+
+			$('body').removeClass('loading').addClass('loaded');
+
+			setTimeout(function () {
+				$('section').show();
+				$('aside').show();
+				$('footer').show();
+				$('.loader').hide();
+				$('.container').addClass('container_loaded');
+			}, 1500);
+
+		}, time);
+
+	</script>
+	<script type="text/javascript" src="../js/seasonMenu.js"></script>
+	<script>
+		var d1 = new SeasonMenu('#drop1');
+	</script>
+	<script type="text/javascript" src="../js/popUp.js"></script>
+	<script>
+		var p1 = new PopUp('#header', '#loginMenu');
+	</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/*-----------------------------------------------------------------*/
+/*-- Season Page Mobile --*/
+@media only screen and (max-width: 1200px) {
+	.main {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.season {
+		width: 100%;
+	}
+	.sectionHead__wrap,
+	.sectionHead__drop {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.seasonMatch {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.seasonMatch__contest {
+		width: 11%;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.container {
+		padding-top: calc(5vh + (44px + (2vh * 2)) + 2vw);
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.seasonMatch__contest {
+		width: 15%;
+	}
+	.seasonMatch__clubName {
+		display: none;
+	}
+	.seasonMatch__result {
+		width: 15%;
+	}
+	.seasonMatch__date {
+		width: 15%;
+	}
+}
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+	.seasonMatch {
+		height: 25vh;
+	}
+}
+@media only screen and (max-width: 560px) {
+	.seasonMatch__contest {
+		width: 20%;
+	}
+	.seasonMatch__date {
+		width: 20%;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.seasonMatch__teamLogo {
+		width: 15%;
+	}
+	.seasonMatch__result {
+		width: 20%;
+	}
+}
+/*-- /Season Page Mobile --*/

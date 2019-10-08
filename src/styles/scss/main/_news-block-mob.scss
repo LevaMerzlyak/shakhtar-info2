@@ -1,0 +1,41 @@
+/*-----------------------------------------------------------------*/
+/*-- News Mobile Block --*/
+@media only screen and (max-width: 1200px) {
+	.allNews {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.news__wrap {
+		flex-wrap: wrap;
+	}
+	.news_allNews {
+		width: 100%;
+		margin-right: 0;
+		.news__dateTime {
+			width: 70%;
+		}
+		.newsImg {
+			width: 30%;
+		}
+		.news__head {
+			width: 70%;
+		}
+	}
+	.main__aside_news {
+		margin-top: 0;
+	}
+}
+@media only screen and (max-width: 1200px) and (orientation: landscape) {
+	.news_allNews {
+		.news__dateTime {
+			width: 80%;
+		}
+		.newsImg {
+			width: 20%;
+		}
+		.news__head {
+			width: 80%;
+		}
+	}
+}
+/*-- /News Mobile Block --*/

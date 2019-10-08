@@ -1,0 +1,32 @@
+/*-----------------------------------------------------------------*/
+/*-- Main Block Style --*/
+.main__wrap {
+	overflow: hidden;
+	height: 0;/* unloaded state */
+	transition: height 0.5s $ttf;
+}
+.main {
+	height: 60vh;
+	padding-top: 20vh;
+	padding-left: 4.88%;
+	padding-right: 4.88%;
+	box-sizing: border-box;
+	position: relative;
+}
+.main__head {
+	color: #fff;
+	font-size: 4.5em;
+	@extend %proxi-bld;
+	position: relative;
+	z-index: 1;
+	text-transform: uppercase;
+}
+/*-----------------------------------------------------------------*/
+/*-- Loaded State --*/
+.loaded {
+	.main__wrap {
+		height: 60vh;
+	}
+}
+/*-- /Loaded State --*/
+/*-- /Main Block Style --*/

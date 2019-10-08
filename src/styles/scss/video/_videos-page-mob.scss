@@ -1,0 +1,17 @@
+/*-----------------------------------------------------------------*/
+/*-- Video Page Block Mobile --*/
+@media only screen and (max-width: 1200px) {
+	.video {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.sectionHead__wrap_video {
+		margin-bottom: 5vh;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.container {
+		padding-top: calc(5vh + (44px + (2vh * 2)) + 2vw);
+	}
+}
+/*-- /Video Page Block Mobile --*/

@@ -1,0 +1,31 @@
+/*-----------------------------------------------------------------*/
+/*-- Pages Navigation Mobile --*/
+@media only screen and (max-width: 1200px) {
+	.pagesNav__link {
+		min-width: 44px;
+	}
+	.pagesNav__item {
+		&_dots {
+			.pagesNav__link {
+				min-width: auto;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 500px) {
+	.pagesNav {
+		justify-content: space-between;
+	}
+	.pagesNav__item {
+		&:not(:last-child) {
+			margin-right: 0;
+		}
+	}
+}
+@media only screen and (max-width: 410px) {
+	.pagesNav__item_atStart,
+	.pagesNav__item_atEnd {
+		display: none;
+	}
+}
+/*-- /Pages Navigation Mobile --*/

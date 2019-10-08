@@ -1,0 +1,17 @@
+/*-----------------------------------------------------------------*/
+/*-- Season Menu --*/
+@media only screen and (max-width: 1200px) {
+	.sectionHead__drop {
+		.section__head {
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 1025px) {
+	.seasonMenu {
+		right: 0;
+	}
+}
+/*-- /Season Menu --*/

@@ -1,0 +1,29 @@
+@import 'global/variables';
+@import 'global/global';
+
+.loading {
+    height: 100vh;
+    overflow: hidden;
+}
+section,
+footer {
+    display: none;
+}
+
+@import 'components/navigation';
+@import 'global/header';
+
+@import 'team/team-main';
+@import 'team/team-members';
+
+@import 'global/footer';
+// Mobile Styles
+@import 'global/header-mob';
+
+@import 'team/team-main-mob';
+@import 'team/team-members-mob';
+
+@import 'global/footer-mob';
+
+// Ads
+@import 'components/blurb';

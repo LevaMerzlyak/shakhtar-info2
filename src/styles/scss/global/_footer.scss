@@ -1,0 +1,80 @@
+/*-----------------------------------------------------------------*/
+/*-- Footer Style --*/
+.footer {
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-top: 3vh;
+	padding-bottom: 5vh;
+	background-color: $clr-blk;
+	.nav__item {
+		&:before {
+			display: none;
+		}
+	}
+}
+.logo_footer {
+	margin-right: 2%;
+}
+.footer__nav {
+	display: flex;
+	align-items: center;
+	height: 11vh;
+}
+.nav_footer {
+	width: 50%;
+}
+.footer__wrap {
+	display: flex;
+	justify-content: space-between;
+}
+.footerTxt {
+	width: 63%;
+}
+.footer__txt {
+	margin-top: 1em;
+	color: #fff;
+	font-size: 0.9em;
+	@extend %proxi-reg;
+	line-height: 1.5em;
+	a {
+		color: #fff;
+	}
+	&_dev {
+		font-size: 1em;
+		@extend %gotham-med;
+		a {
+			color: $clr-orange;
+		}
+	}
+}
+.socials {}
+.socials__item {
+	&:not(:last-child) {
+		margin-bottom: 10%;
+	}
+}
+.socials__link {
+	position: relative;
+	padding-left: 2.8em;
+	color: #fff;
+	font-size: 0.9em;
+	@extend %proxi-reg;
+	text-decoration: none;
+	line-height: 1.7em;
+	.icon {
+		width: 1.8em;
+		height: 1.5em;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+	}
+}
+.footer__aside {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: $clr-bg;
+}
+/*-- /Footer Style --*/

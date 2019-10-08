@@ -1,0 +1,48 @@
+/*-----------------------------------------------------------------*/
+/*-- About Block Style --*/
+.about {
+	margin-left: 3%;
+	margin-right: 3%;
+	padding-top: 3%;
+	padding-bottom: 10vh;
+	box-sizing: border-box;
+	position: relative;
+}
+.container_loaded {
+	.about {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+.aboutTxt {
+	width: 65%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 5%;
+	box-sizing: border-box;
+	position: absolute;
+	top: -20vh;
+	left: 2%;
+	background-color: #fff;
+	z-index: 5;
+}
+.about__head {
+	color: #000;
+	font-size: 3.5em;
+	@extend %proxi-eXbld;
+	line-height: 20vh;
+}
+.about__txt {
+	color: $clr-bg;
+	font-size: 1.1em;
+	@extend %proxi-reg;
+	line-height: 1.6em;
+	&:not(:last-child) {
+		margin-bottom: 2em;
+	}
+}
+.aboutTxt__link {
+	color: $clr-orange;
+	text-decoration: none;
+}
+/*-- /About Block Style --*/

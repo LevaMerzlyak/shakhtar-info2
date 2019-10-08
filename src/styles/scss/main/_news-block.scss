@@ -1,0 +1,38 @@
+/*-----------------------------------------------------------------*/
+/*-- News Block --*/
+.allNews {
+	padding-left: 3%;
+	padding-right: 3%;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	box-sizing: border-box;
+}
+.news__wrap {
+	display: flex;
+	margin-top: 5vh;
+}
+.news_allNews {
+	width: 63%;
+	margin-right: 7%;
+	.news__item {
+		&_top {
+			&:before {
+				width: 0.9%;
+			}
+		}
+	}
+	.news__dateTime,
+	.newsImg {
+		width: 12.5%;
+	}
+	.news__head {
+		width: 75%;
+	}
+}
+.main__aside_news {
+	margin-top: 1em;
+}
+.moreBtn__wrap_allNews {
+	margin-top: 5vh;
+}
+/*-- /News Block --*/

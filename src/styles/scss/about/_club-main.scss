@@ -1,0 +1,22 @@
+/*-----------------------------------------------------------------*/
+/*-- Main Block Style --*/
+.main__wrap {
+	overflow: hidden;
+	height: 0;/* unloaded state */
+	transition: height 0.5s $ttf;
+}
+.main {
+	height: 100vh;
+	position: relative;
+	background-position-x: center;
+	background-position-y: top;
+}
+/*-----------------------------------------------------------------*/
+/*-- Loaded State --*/
+.loaded {
+	.main__wrap {
+		height: 100vh;
+	}
+}
+/*-- /Loaded State --*/
+/*-- /Main Block Style --*/

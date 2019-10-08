@@ -1,0 +1,18 @@
+/*-----------------------------------------------------------------*/
+/*---- Matches Tables Mobile --*/
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+	.match__wrap {
+		height: 40vh;
+	}
+	.match__broadcast {
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.matchesTable {
+		th,
+		td {
+			line-height: 15vh;
+		}
+	}
+}
+/*-- /Matches Tables Mobile --*/
