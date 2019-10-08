@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------*/
 /*-- Main Block Mobile Style --*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1179px) {
 	.main__wrap {
 		margin-top: 11vh;		
 	}
@@ -13,7 +13,7 @@
 		}
 	}
 }
-@media only screen and (max-width: 1200px) and (orientation: portrait) {
+@media only screen and (max-width: 1179px) and (orientation: portrait) {
 	.main {
 		height: 65vh;
 	}

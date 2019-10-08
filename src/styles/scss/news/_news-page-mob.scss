@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------*/
 /*-- News Page Block Mobile --*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1179px) {
 	.news {
 		padding-left: 2%;
 		padding-right: 2%;
@@ -103,7 +103,7 @@
 		display: none;
 	}
 }
-@media only screen and (max-width: 1200px) and (orientation: landscape) {
+@media only screen and (max-width: 1179px) and (orientation: landscape) {
 	.news__link {
 		height: 20vh;
 	}
