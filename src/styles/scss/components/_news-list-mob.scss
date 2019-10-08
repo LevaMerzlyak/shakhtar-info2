@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------*/
 /*-- News List Mobile --*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1179px) {
 	.news__link {
 		height: 15vh;
 		position: relative;
@@ -67,7 +67,7 @@
 		padding-bottom: 2em;
 	}
 }
-@media only screen and (max-width: 1200px) and (orientation: landscape) {
+@media only screen and (max-width: 1179px) and (orientation: landscape) {
 	.news__dateTime {
 		width: 80%;
 		left: 20%;
@@ -88,7 +88,7 @@
 		}
 	}
 }
-@media only screen and (max-width: 1200px) and (orientation: landscape) {
+@media only screen and (max-width: 1179px) and (orientation: landscape) {
 	.news__link {
 		height: 20vh;
 	}

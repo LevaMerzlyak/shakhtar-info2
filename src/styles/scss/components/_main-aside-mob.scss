@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------*/
 /*-- Main Aside Mobile --*/
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1179px) {
 	.main__aside {
 		width: 100%;
 		padding-left: 2%;
@@ -33,7 +33,7 @@
 		}
 	}
 }
-@media only screen and (max-width: 1200px) and (orientation: landscape) {
+@media only screen and (max-width: 1179px) and (orientation: landscape) {
 	.aside__wrap_seeAlso {
 		.news__dateTime {
 			width: 80%;

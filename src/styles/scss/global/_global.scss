@@ -29,7 +29,7 @@ body {
 body {
     @include fluid-type($minMob_width, $maxMob_width, $min_font, $max_font);
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1180px) {
     body {
         font-size: $min_font;
     }
@@ -202,7 +202,7 @@ body {
 /*-- /Global Styles --*/
 /*-----------------------------------------------------------------*/
 /*-- Global Styles Mobile --*/
-@media only screen and (max-width: 1979px) {
+@media only screen and (max-width: 1179px) {
     .more__btn {
         background-color: $clr-orange;
         &:before {
