@@ -10,11 +10,11 @@
 	padding-right: 2%;
 	box-sizing: border-box;
 	position: absolute;
-	left: 3vw;
+	left: 50%;
 	top: 3vh;
 	background-color: $clr-header;
 	z-index: 5;
-	transform: translateY(-200%);/* unloaded state */
+	transform: translate(-50%,-200%);/* unloaded state */
 	transition: transform 0.5s $ttf 0.2s;
 }
 .menuBtn {
@@ -465,7 +465,7 @@
 /*-- Loaded State --*/
 .loaded {
 	.header {
-		transform: translateY(0%);
+		transform: translate(-50%, 0%);
 	}
 	.nav__item_active {
 		&:before{
