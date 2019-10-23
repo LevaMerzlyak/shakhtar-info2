@@ -58,7 +58,7 @@ lazyRequireTask('scripts-move', './tasks/move', {
 
 lazyRequireTask('fonts', './tasks/move', {
     src: 'src/fonts/**/*.*',
-    dst: 'dist/fonts'
+    dst: 'dist/css/fonts'
 });
 
 /*gulp.task('scripts', gulp.series(

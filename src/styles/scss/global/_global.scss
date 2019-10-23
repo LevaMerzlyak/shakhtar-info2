@@ -43,6 +43,7 @@ body {
     overflow-y: hidden;
     position: relative;
     &_loaded {
+        background-color: $clr-bg;
         height: auto;
     }
 }
